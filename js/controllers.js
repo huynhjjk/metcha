@@ -33,4 +33,12 @@ app.controller('ChatCtrl', ['$scope', function($scope) {
 		});
 	}
 
+	$scope.deleteMessage = function(index) {
+		$scope.messageList.splice(index, 1);
+	}
+
+	$scope.deleteMessages = function() {
+		$scope.messageList = [];
+	}
+
 }]);
